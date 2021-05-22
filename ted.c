@@ -64,6 +64,25 @@ char editorReadKey()
     return c;
 }
 
+int getCursorPosition(int *rows, int *cols)
+{
+    if (write(STDOUT_FILENO, "\x1b[6n", 4) != 4) return -1;
+
+    printf("\r\n");
+    char c;
+    while (read(STDIN_FILENO, &c, c) == 1)
+    {
+        if (iscntrl(c))
+            printf("%d\r\n", c);
+        else
+            printf("%d ('%c')\r\n", c, c);
+    }
+
+    editorReadKey();
+
+    return -1;
+}
+
 int getWindowSize(int *rows, int *cols)
 {
     struct winsize ws;
@@ -71,7 +90,7 @@ int getWindowSize(int *rows, int *cols)
     // Started work on step 31
     if (1 || ioctl(STDOUT_FILENO, TIOCGWINSZ, &ws) == -1 || ws.ws_col == 0)
     {
-        if (write(STDOUT_FILENO, "\x1b[999C\x1b[999B", 12) != 12) return -1;
+        if (write(STDOUT_FILENO, "\x1b[999C\x1b[999B", 12) != 12) return getCursorPosition(rows, cols);
         editorReadKey();
         return -1;
     } 
@@ -82,6 +101,7 @@ int getWindowSize(int *rows, int *cols)
         return 0;
     }
 }
+
 
 /*** output ***/
 
