@@ -1,0 +1,15 @@
+TED
+
+Text
+Editor
+Disease
+
+A Vim inspired text editor.
+
+Requirements:
+Vim like movements and key commands.
+Lightweight
+IDE like features (optional)
+
+Resources:
+https://viewsourcecode.org/snaptoken/kilo/index.html
