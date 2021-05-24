@@ -14,13 +14,15 @@ RM = rm -rf
 CP = cp -f
 endif
 
-CFLAGS=-g -Wall
 
+WARNINGS=-g -Wall -Wformat-security -Wstrict-overflow -Wsign-compare \
+		-Wempty-body -Wignored-qualifiers -Wuninitialized -Wtype-limits -Woverride-init \
+		-Wno-multichar -Wno-attributes -Wnull-dereference
 
 default: ted
 
-ted: ted.c
-	$(CC) -o ted ted.c $(CFLAGS)
+ted: src/ted.c
+	$(CC) -o ted src/ted.c $(WARNINGS)
 
 
 .PHONY: clean
