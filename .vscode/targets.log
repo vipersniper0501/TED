@@ -6,9 +6,8 @@ make all -f "/Volumes/Coding/Coding_Projects/C/TED/Makefile" --print-data-base -
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
- 
 
-# Make data base, printed on Mon May 24 06:37:26 2021
+# Make data base, printed on Mon May 31 15:17:36 2021
 
 # Variables
 
@@ -28,16 +27,12 @@ VSCODE_LOG_NATIVE = false
 CURDIR := /Volumes/Coding/Coding_Projects/C/TED
 # makefile
 SHELL = /bin/sh
-# makefile (from `/Volumes/Coding/Coding_Projects/C/TED/Makefile', line 13)
-RM = rm -rf
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
-# makefile (from `/Volumes/Coding/Coding_Projects/C/TED/Makefile', line 1)
-MAKEFILE_LIST :=  /Volumes/Coding/Coding_Projects/C/TED/Makefile
-# makefile (from `/Volumes/Coding/Coding_Projects/C/TED/Makefile', line 14)
-CP = cp -f
+# makefile
+MAKEFILE_LIST := 
 # environment
 VSCODE_NODE_CACHED_DATA_DIR = /Users/davidbrenner/Library/Application Support/Code/CachedData/054a9295330880ed74ceaedda236253b4f39a335
 # environment
@@ -47,7 +42,7 @@ __CFBundleIdentifier = com.microsoft.VSCode
 # environment
 P9K_SSH = 0
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/h2/qzfcv1xs1fj7jjvj_wmfxq000000gn/T/vscode-ipc-e78acaaa-4c16-4b6e-aa4f-296b9dd5cc5f.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/h2/qzfcv1xs1fj7jjvj_wmfxq000000gn/T/vscode-ipc-12636fbe-5bac-43c4-9ddc-1fa1d34bff9c.sock
 # environment
 VSCODE_CWD = /
 # environment
@@ -61,11 +56,11 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.bDQqqfrhVK/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.vSXY7IqAPz/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
-DISPLAY = /private/tmp/com.apple.launchd.RUKgY2iiQG/org.macosforge.xquartz:0
+DISPLAY = /private/tmp/com.apple.launchd.2HcmU9dU7S/org.macosforge.xquartz:0
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -96,14 +91,12 @@ MAKE = $(MAKE_COMMAND)
 MAKECMDGOALS := all
 # environment
 SHLVL = 1
-# makefile (from `/Volumes/Coding/Coding_Projects/C/TED/Makefile', line 1)
-CC = gcc
 # default
 MAKE_VERSION := 3.81
 # environment
 USER = davidbrenner
 # makefile
-.DEFAULT_GOAL := default
+.DEFAULT_GOAL := 
 # environment
 LESS = -R
 # automatic
@@ -119,9 +112,9 @@ TMPDIR = /var/folders/h2/qzfcv1xs1fj7jjvj_wmfxq000000gn/T/
 # environment
 VSCODE_IPC_HOOK = /Users/davidbrenner/Library/Application Support/Code/1.56.2-main.sock
 # makefile
-MAKEFLAGS = Rrqp
+MAKEFLAGS = Rrp
 # environment
-MFLAGS = -Rrqp
+MFLAGS = -Rrp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
@@ -136,8 +129,6 @@ __CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
 COMMAND_MODE = unix2003
 # default
 MAKEFILES := 
-# makefile (from `/Volumes/Coding/Coding_Projects/C/TED/Makefile', line 18)
-WARNINGS = -g -Wall -Wformat-security -Wstrict-overflow -Wsign-compare -Wempty-body -Wignored-qualifiers -Wuninitialized -Wtype-limits -Woverride-init -Wno-multichar -Wno-attributes -Wnull-dereference
 # automatic
 <F = $(notdir $<)
 # environment
@@ -155,9 +146,9 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 6160
+VSCODE_PID = 24107
 # variable set hash-table stats:
-# Load=72/1024=7%, Rehash=0, Collisions=1/97=1%
+# Load=68/1024=7%, Rehash=0, Collisions=1/87=1%
 
 # Pattern-specific Variable Values
 
@@ -177,13 +168,6 @@ VSCODE_PID = 6160
 # Not a target:
 all:
 #  Command-line target.
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has not been updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-
-.PHONY: clean
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -191,27 +175,13 @@ all:
 # Not a target:
 /Volumes/Coding/Coding_Projects/C/TED/Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2021-05-22 11:20:42
-#  File has been updated.
-#  Successfully updated.
+#  File does not exist.
+#  File has not been updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
 .SUFFIXES:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-ted: src/ted.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `/Volumes/Coding/Coding_Projects/C/TED/Makefile', line 25):
-	$(CC) -o ted src/ted.c $(WARNINGS)
-	
-
-default: ted
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -222,23 +192,8 @@ default: ted
 #  Modification time never checked.
 #  File has not been updated.
 
-clean:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  commands to execute (from `/Volumes/Coding/Coding_Projects/C/TED/Makefile', line 30):
-	-$(RM) ted
-	
-
-# Not a target:
-src/ted.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
 # files hash-table stats:
-# Load=9/1024=1%, Rehash=0, Collisions=0/24=0%
+# Load=4/1024=0%, Rehash=0, Collisions=0/16=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -250,8 +205,9 @@ src/ted.c:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4049 / max = 4049 / min = 4049 / avg = 4049
 
-# Finished Make data base on Mon May 24 06:37:26 2021
+# Finished Make data base on Mon May 31 15:17:36 2021
 
  
-make: *** No rule to make target `all'.  Stop.
+make: /Volumes/Coding/Coding_Projects/C/TED/Makefile: No such file or directory
+make: *** No rule to make target `/Volumes/Coding/Coding_Projects/C/TED/Makefile'.  Stop.
  

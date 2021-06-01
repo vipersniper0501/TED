@@ -1,0 +1,3 @@
+/media/michael/Coding/Coding_Projects/C/TED/build/CMakeFiles/rebuild_cache.dir
+/media/michael/Coding/Coding_Projects/C/TED/build/CMakeFiles/edit_cache.dir
+/media/michael/Coding/Coding_Projects/C/TED/build/CMakeFiles/ted.dir

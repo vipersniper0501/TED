@@ -1,5 +1,9 @@
-make default -f "/Volumes/Coding/Coding_Projects/C/TED/Makefile" --dry-run --always-make --keep-going --print-directory
+make -f "/Volumes/Coding/Coding_Projects/C/TED/Makefile" --dry-run --always-make --keep-going --print-directory
 make: Entering directory `/Volumes/Coding/Coding_Projects/C/TED'
-gcc -o ted src/ted.c -g -Wall -Wformat-security -Wstrict-overflow -Wsign-compare -Wempty-body -Wignored-qualifiers -Wuninitialized -Wtype-limits -Woverride-init -Wno-multichar -Wno-attributes -Wnull-dereference
 make: Leaving directory `/Volumes/Coding/Coding_Projects/C/TED'
+ 
+make: /Volumes/Coding/Coding_Projects/C/TED/Makefile: No such file or directory
+make: *** No rule to make target `/Volumes/Coding/Coding_Projects/C/TED/Makefile'.
+make: Failed to remake makefile `/Volumes/Coding/Coding_Projects/C/TED/Makefile'.
+make: *** No targets specified and no makefile found.  Stop.
  

@@ -1,3 +1,10 @@
 {
-    "makefile.extensionOutputFolder": "./.vscode"
+    "makefile.extensionOutputFolder": "./.vscode",
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/Volumes/Coding/Coding_Projects/C/TED",
+            "binaryPath": "/Volumes/Coding/Coding_Projects/C/TED/ted",
+            "binaryArgs": []
+        }
+    ]
 }

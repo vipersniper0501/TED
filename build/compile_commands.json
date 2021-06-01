@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/media/michael/Coding/Coding_Projects/C/TED/build",
+  "command": "/usr/bin/gcc  -I/media/michael/Coding/Coding_Projects/C/TED/include    -o CMakeFiles/ted.dir/src/ted.c.o   -c /media/michael/Coding/Coding_Projects/C/TED/src/ted.c",
+  "file": "/media/michael/Coding/Coding_Projects/C/TED/src/ted.c"
+}
+]
