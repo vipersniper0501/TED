@@ -133,6 +133,9 @@ void editorDrawMessageBar(struct abuf *ab)
         abAppend(ab, E.statusmsg, msglen);
 }
 
+/*
+ * All functions that are to be run when screen refreshes/updates
+ */
 void editorRefreshScreen()
 {
     editorScroll();
@@ -158,6 +161,10 @@ void editorRefreshScreen()
     abFree(&ab);
 }
 
+/*
+ * Sets the status bar's message.
+ * Message will disappear after 5 seconds.
+ */
 void editorSetStatusMessage(const char *fmt, ...) {
     va_list ap;
     va_start(ap, fmt);

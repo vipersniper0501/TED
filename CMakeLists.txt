@@ -1,8 +1,7 @@
 cmake_minimum_required(VERSION 3.16.3)
-set(CMAKE_C_COMPILER "gcc")
-set(CMAKE_CXX_COMPILER "g++")
-#set(CMAKE_C_FLAGS "-g -Wall -Wformat-security -Wstrict-overflow -Wsign-compare -Wempty-body -Wignored-qualifiers -Wuninitialized -Wtype-limits -Woverride-init -Wno-multichar -Wno-attributes -Wnull-dereference")
 project (ted VERSION 0.0.1)
+
+set(CMAKE_BUILD_TYPE RelWithDebInfo)
 
 if (GCC)
     add_compile_options(-g -Wall -Wformat-security -Wstrict-overflow -Wsign-compare -Wempty-body -Wignored-qualifiers -Wuninitialized -Wtype-limits -Woverride-init -Wno-multichar -Wno-attributes -Wnull-dereference)

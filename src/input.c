@@ -92,6 +92,9 @@ void editorMoveCursor(int key)
     }
 }
 
+/*
+ * Controls what happens when a key is pressed
+ */
 void editorProcessKeypress()
 {
     static int quit_times = TED_QUIT_TIMES;
